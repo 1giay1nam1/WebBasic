@@ -1,0 +1,15 @@
+.container div{
+    border: 1px solid #000;
+    text-align: center;
+}
+.main{
+    display: flex;
+    height: 100px;
+}
+.content{
+  flex:1;
+    
+}
+.sidebar{
+    width: 50%;
+}

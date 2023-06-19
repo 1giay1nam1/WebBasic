@@ -1,3 +1,36 @@
-h1{
-    color: green;
+body {
+    background-color: #EEEFF1;
+
+}
+
+/* .download-app {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 999px;
+    border: 2px solid #000;
+    transition: ease .25s;
+
+} */
+
+
+
+.gift-vouchers {
+    color: #020202ff;
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 999px;
+    border: 3px solid #000;
+    transition: ease .25s;
+} 
+.gift-vouchers :hover {
+    background-color: rgb(65, 5, 5);
+    color: #fff;
+    position: ;
 }
