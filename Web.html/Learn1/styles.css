@@ -1,0 +1,30 @@
+.form-wrapper {
+  width: 600px;
+  padding: 20px;
+  margin: 200px auto;
+  border: 2px solid black;
+}
+
+label {
+  width: 100px;
+  display: inline-block;
+  text-align: end;
+}
+
+input {
+  width: 300px;
+}
+
+.error-message {
+  color: red;
+}
+
+.form-group {
+  margin: 15px;
+}
+
+.form-action {
+  display: flex;
+  justify-content: center;
+  
+}

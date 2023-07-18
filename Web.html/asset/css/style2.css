@@ -1,87 +1,109 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: aqua; */
 }
 
 nav {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 1px 1px 10px black;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 10px black;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 .nav-list {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .subnav {
-    display: none;
+  display: none;
 }
 
 li {
-    font-weight: 700;
-    cursor: pointer;
-    position: relative;
+  font-weight: 700;
+  cursor: pointer;
+  position: relative;
 }
 
 li:hover>ul {
-    display: block;
+  display: block;
 }
 
 .subnav {
-    left: 0;
-    position: absolute;
-    width: 200px;
-    border: 1px solid rgba(46, 46, 49, 0.212);
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
+  left: 0;
+  position: absolute;
+  width: 200px;
+  border: 1px solid rgba(46, 46, 49, 0.212);
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .subnav li {
-    margin: 10px;
+  margin: 10px;
 }
 
 li:hover>ul.subsub_nav {
-    display: block;
-    right: 100%;
-    top: 0;
+  display: block;
+  right: 100%;
+  top: 0;
 }
 
-@media only screen and (max-width: 400px) {
+@media screen and (max-width:410px) {
+  .bar-block {
+    display: block;
+    margin-right: 100px;
+  }
 
-
-        .nav-list {
-          display: none;
-        }
-        
-        .nav-toggle {
-          display: block;
-          text-align: center;
-          cursor: pointer;
-          font-size: 20px;
-          margin-top: 10px;
-        }
-        
-        .nav-toggle .fa {
-          color: black;
-        }
-        
-        .nav-toggle.active .fa {
-          color: blue;
-        }
-        
-        .nav-list.active {
-          display: block;
-          text-align: center;
-        }
-      }
-      
+  .nav-list {
+   
+    position: fixed;
+    top: 101px;
+    left: -100%;
+    padding: 15px;
+    justify-content: start;
+     /* display: none; */
+    flex-direction: column;
+    height: 100vh;
+    background-color: white;
+  }
+  .nav-list .list-item {
+  padding: 20px 0;
+  }
+  .subnav {
+    display: none;
+    left:50px;
+  }
+  #for-nav:checked + .nav-list{
+    left: 0;
+  } 
+  
+  .bar-add {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .list-item :hover .subnav{
+    display: flex;
+    position: fixed;
+    top: 101px;
+    /* left:  */
+    /* padding: 15px;
+    justify-content: start;
+    flex-direction: column;
+    height: 100vh;
+    background-color: white; */
+    
+  }
+  
+  
+  
+}

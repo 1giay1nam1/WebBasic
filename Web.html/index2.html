@@ -1,50 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./asset/CSS/">
-  </head>
-  <body>
-    <nav>
-      <ul class="nav-list">
-        <li class="list-item">Home</li>
-        <li class="list-item">About</li>
-        <li class="list-item">
-          Listing
-          <ul class="subnav">
-            <li class="subnav-item">Search Popup Map</li>
-            <li class="subnav-item">Search HalfMap</li>
-          </ul>
-        </li>
-        <li class="list-item">
-          Hotel
-          <ul class="subnav">
-            <li class="subnav-item">Detail Hotel 1</li>
-            <li class="subnav-item">Detail Hotel 2</li>
-            <li class="subnav-item">Detail Home 1</li>
-            <li class="subnav-item">Detail Home 2 </li>
-          </ul>
-        </li>
-        <li class="list-item">
-          Page
-          <ul class="subnav">
-            <li class="subnav-item">
-              Blog
-              <ul class="subnav subsub_nav">
-                <li class="subnav-item">Detail Blog</li>
-              </ul>
-            </li>
-            <li class="subnav-item">Function: Wishlist</li>
-            <li class="subnav-item">Become Local Expert</li>
-            <li class="subnav-item">Function: Login</li>
-            <li class="subnav-item">FAQ</li>
-            <li class="subnav-item">List D</li>
-          </ul>
-        </li>
-        <li class="list-item">Contact</li>
-      </ul>
-    </nav>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Document</title>
+  <link rel="stylesheet" href="./asset/CSS/style2.css">
+</head>
+
+<body>
+  <nav>
+    <label class="bar-block" for="for-nav">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+    <input type="checkbox"  id="for-nav" hidden>
+    <ul class="nav-list">
+      <li class="list-item">Home</li>
+      <li class="list-item">About</li>
+      <li class="list-item">
+        Listing
+        <ul class="subnav">
+          <li class="subnav-item">Search Popup Map</li>
+          <li class="subnav-item">Search HalfMap</li>
+        </ul>
+      </li>
+      
+      <li class="list-item">
+        Hotel
+        <ul class="subnav">
+          <li class="subnav-item">Detail Hotel 1</li>
+          <li class="subnav-item">Detail Hotel 2</li>
+          <li class="subnav-item">Detail Home 1</li>
+          <li class="subnav-item">Detail Home 2 </li>
+        </ul>
+      </li> 
+      <label class="bar-add" for="nav">
+        <i class="fa-solid fa-plus" ></i>
+      </label>
+      <input type="checkbox" class="nav"  >
+      <li class="list-item">
+        Page
+        <ul class="subnav">
+          <li class="subnav-item">
+            Blog
+            <ul class="subnav subsub_nav">
+              <li class="subnav-item">Detail Blog</li>
+            </ul>
+          </li>
+          <li class="subnav-item">Function: Wishlist</li>
+          <li class="subnav-item">Become Local Expert</li>
+          <li class="subnav-item">Function: Login</li>
+          <li class="subnav-item">FAQ</li>
+        </ul>
+      </li>
+      <li class="list-item">Contact</li>
+    </ul>
+  </nav>
+</body>
+
 </html>

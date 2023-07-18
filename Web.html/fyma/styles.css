@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Glass+Antiqua&family=Poppins:wght@300;600&display=swap');
+
+:root{
+  --colorText: #2c0958;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "Poppins", sans-serif;
+  color: var(--colorText);
+  font-weight: 600;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.header__brand {
+  width: 40%;
+  font-size: 35px;
+  font-family: 900;
+  background: #121fcf;
+  background: linear-gradient(to right, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+}
+
+.link_menu {
+  text-decoration: none;
+  color: var(--colorText);
+}
+
+.header__action .link_menu {
+  margin-right: 16px;
+}
+
+/* banner */
+
+.banner {
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.banner__background {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.banner__background img{
+  width: auto;
+  height: 100%;
+}
+
+.banner__decoration {
+  height: 100%;
+  width: 60%;
+  padding-top: 100px;
+}
+
+.banner__decoration h1 {
+  font-size: 122px;
+  margin-bottom: 32px;
+  color: var(--colorText);
+}
+
+.banner__decoration p {
+  margin: 32px 0;
+  color: var(--colorText);
+}
+
+.banner__decoration .btn span{
+  margin-right: 6px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.banner__parameter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Glass Antiqua', cursive;
+
+  margin: 32px 0px;
+  width: 50%;
+}
+
+.banner__parameter--item .number{
+  font-size: 64px;
+}
+
+.banner__parameter--item .text {
+  font-size: 30px;
+}
+
+/* common class */
+
+.btn {
+  min-width: 150px;
+  border-radius: 20px;
+  padding: 8px 24px;
+  background: #f857a6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ff5858,
+    #f857a6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ff5858,
+    #f857a6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,9 @@
+.toast {
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+  
+  .toast.active {
+    opacity: 1 !important;
+  }

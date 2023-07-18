@@ -1,0 +1,191 @@
+body {
+  background-color: #262433;
+}
+body ul {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+body ul .toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+body ul .toggle i {
+  font-size: 45px;
+}
+body ul .toggle.active {
+  transform: rotate(135deg);
+  background-color: #262433;
+  box-shadow: 0px 0px 0px 60px white;
+}
+body ul .toggle.active i {
+  color: white;
+}
+body ul .toggle.active ~ li {
+  opacity: 1;
+  cursor: pointer;
+}
+body ul .toggle.active ~ li:nth-child(2) {
+  transform: rotate(45deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(2) i {
+  transform: rotate(-45deg);
+}
+body ul .toggle.active ~ li.active:nth-child(2) {
+  transform: rotate(45deg) translateX(35px);
+}
+body ul .toggle.active ~ li:nth-child(3) {
+  transform: rotate(90deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(3) i {
+  transform: rotate(-90deg);
+}
+body ul .toggle.active ~ li.active:nth-child(3) {
+  transform: rotate(90deg) translateX(35px);
+}
+body ul .toggle.active ~ li:nth-child(4) {
+  transform: rotate(135deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(4) i {
+  transform: rotate(-135deg);
+}
+body ul .toggle.active ~ li.active:nth-child(4) {
+  transform: rotate(135deg) translateX(35px);
+}
+body ul .toggle.active ~ li:nth-child(5) {
+  transform: rotate(180deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(5) i {
+  transform: rotate(-180deg);
+}
+body ul .toggle.active ~ li.active:nth-child(5) {
+  transform: rotate(180deg) translateX(35px);
+}
+body ul .toggle.active ~ li:nth-child(6) {
+  transform: rotate(225deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(6) i {
+  transform: rotate(-225deg);
+}
+body ul .toggle.active ~ li.active:nth-child(6) {
+  transform: rotate(225deg) translateX(35px);
+}
+body ul .toggle.active ~ li:nth-child(7) {
+  transform: rotate(270deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(7) i {
+  transform: rotate(-270deg);
+}
+body ul .toggle.active ~ li.active:nth-child(7) {
+  transform: rotate(270deg) translateX(35px);
+}
+body ul .toggle.active ~ li:nth-child(8) {
+  transform: rotate(315deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(8) i {
+  transform: rotate(-315deg);
+}
+body ul .toggle.active ~ li.active:nth-child(8) {
+  transform: rotate(315deg) translateX(35px);
+}
+body ul .toggle.active ~ li:nth-child(9) {
+  transform: rotate(360deg) translateX(55px);
+}
+body ul .toggle.active ~ li:nth-child(9) i {
+  transform: rotate(-360deg);
+}
+body ul .toggle.active ~ li.active:nth-child(9) {
+  transform: rotate(360deg) translateX(35px);
+}
+body ul .toggle.active ~ .indicator {
+  opacity: 1;
+  transform: rotate(0deg) translateX(15px);
+}
+body ul li {
+  position: absolute;
+  left: 0;
+  transform-origin: 140px;
+  left: 10px;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 5;
+}
+body ul li i {
+  font-size: 20px;
+}
+body ul li.active:nth-child(2) {
+  transform: rotate(45deg) translateX(35px);
+}
+body ul li.active:nth-child(2) ~ .indicator {
+  transform: rotate(45deg) translateX(15px);
+}
+body ul li.active:nth-child(3) {
+  transform: rotate(90deg) translateX(35px);
+}
+body ul li.active:nth-child(3) ~ .indicator {
+  transform: rotate(90deg) translateX(15px);
+}
+body ul li.active:nth-child(4) {
+  transform: rotate(135deg) translateX(35px);
+}
+body ul li.active:nth-child(4) ~ .indicator {
+  transform: rotate(135deg) translateX(15px);
+}
+body ul li.active:nth-child(5) {
+  transform: rotate(180deg) translateX(35px);
+}
+body ul li.active:nth-child(5) ~ .indicator {
+  transform: rotate(180deg) translateX(15px);
+}
+body ul li.active:nth-child(6) {
+  transform: rotate(225deg) translateX(35px);
+}
+body ul li.active:nth-child(6) ~ .indicator {
+  transform: rotate(225deg) translateX(15px);
+}
+body ul li.active:nth-child(7) {
+  transform: rotate(270deg) translateX(35px);
+}
+body ul li.active:nth-child(7) ~ .indicator {
+  transform: rotate(270deg) translateX(15px);
+}
+body ul li.active:nth-child(8) {
+  transform: rotate(315deg) translateX(35px);
+}
+body ul li.active:nth-child(8) ~ .indicator {
+  transform: rotate(315deg) translateX(15px);
+}
+body ul li.active:nth-child(9) {
+  transform: rotate(360deg) translateX(35px);
+}
+body ul li.active:nth-child(9) ~ .indicator {
+  transform: rotate(360deg) translateX(15px);
+}
+body .indicator {
+  position: absolute;
+  left: 10px;
+  width: 50px;
+  height: 50px;
+  transform-origin: 140px;
+  transform: rotate(45deg) translateX(150px);
+  background-color: aquamarine;
+  border-radius: 50%;
+  border: 4px solid black;
+  z-index: 4;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+/*# sourceMappingURL=styles.css.map */
